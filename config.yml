@@ -1,0 +1,10 @@
+tunnel: 2edfdda5-3b53-40ee-a13b-3728b64a666f  # Use este ID que está no DNS
+credentials-file: C:\Users\Horizon\.cloudflared\2edfdda5-3b53-40ee-a13b-3728b64a666f.json
+originRequest:
+  connectTimeout: 30s
+  noTLSVerify: true
+
+ingress:
+  - hostname: teamhorizon.cloud
+    service: http://localhost:3000
+  - service: http_status:404
